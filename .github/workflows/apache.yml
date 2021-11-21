@@ -33,11 +33,11 @@ jobs:
             host=$(grep "apache_endpoint" terraform.log | awk -F  ":" '{print $1}' )
             host=${host//'apache_endpoint = "'}
             host=${host//'"'}
-            echo $host >> ansible/hosts
-            cat ansible/hosts
+            echo $host >> apache/hosts
+            cat apache/hosts
             echo "$SSH" > ansible/key.pem
-            chmod 400 ansible/key.pem
-            cat ansible/key.pem
+            chmod 400 apache/key.pem
+            cat apache/key.pem
 
       - name: Install Apache
         uses: saubermacherag/ansible-playbook-docker-action@v1.3
