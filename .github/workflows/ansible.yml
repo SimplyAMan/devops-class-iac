@@ -34,6 +34,7 @@ jobs:
             host=${host//'ec2_endpoint = "'}
             host=${host//'"'}
             echo $host >> ansible/hosts
+            cat ansible/hosts
             echo "$SSH" > ansible/key.pem
             chmod 400 ansible/key.pem
             cat ansible/key.pem
