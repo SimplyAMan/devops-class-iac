@@ -35,7 +35,7 @@ jobs:
             host=${host//'"'}
             echo $host >> apache/hosts
             cat apache/hosts
-            echo "$SSH" > ansible/key.pem
+            echo "$SSH" > apache/key.pem
             chmod 400 apache/key.pem
             cat apache/key.pem
 
