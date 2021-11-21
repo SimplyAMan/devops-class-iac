@@ -44,6 +44,6 @@ jobs:
         with:
           playbookName: 'apache/deploy.yml'
           inventoryFile: 'apache/hosts'
-          keyFile: 'ansible/key.pem'
+          keyFile: 'apache/key.pem'
 
       

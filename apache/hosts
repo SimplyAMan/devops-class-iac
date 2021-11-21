@@ -2,4 +2,4 @@
 ansible_user=ubuntu
 
 [all]
-ec2 ansible_host=
+apache ansible_host=
